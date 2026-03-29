@@ -3,8 +3,8 @@
 title: "Analysis Ready Datasets"
 description: "Methodology and knowledge base for creating ML-enhanced materialized datasets"
 author: "CrainBramp"
-date: "2025-01-06"
-version: "1.0"
+date: "2026-03-29"
+version: "1.1"
 status: "Active"
 tags:
   - type: project-root
@@ -24,9 +24,9 @@ related_documents:
 
 ![Repository Banner](assets/repo-banner.jpg)
 
-> Methodology and knowledge base for creating Analysis Ready Datasets—enhanced, materialized datasets that absorb the compute debt of research communities.
+> Methodology and knowledge base for creating Analysis Ready Datasets, enhanced materialized datasets that absorb the compute debt of research communities.
 
-Analysis Ready Datasets (ARDs) transform raw catalog data into queryable products where common derived quantities have been pre-computed. Rather than distributing raw measurements and expecting each researcher to independently derive what they need, an ARD front-loads the computational cost of "high-friction metrics"—the calculations that appear repeatedly in published research but require significant compute to generate.
+Analysis Ready Datasets (ARDs) transform raw catalog data into queryable products where common derived quantities have been pre-computed. Rather than distributing raw measurements and expecting each researcher to independently derive what they need, an ARD front-loads the computational cost of "high-friction metrics," the calculations that appear repeatedly in published research but require significant compute to generate.
 
 ---
 
@@ -36,7 +36,7 @@ This section provides context for the ARD concept and methodology. If you're alr
 
 ![Project Overview](assets/project-overview-infographic.jpg)
 
-The ARD concept addresses a fundamental inefficiency in data-intensive research: every research group repeats the same foundational processing steps—fitting continua, measuring indices, calculating local densities. This redundancy wastes collective compute resources and creates barriers for researchers without HPC access.
+The ARD concept addresses a fundamental inefficiency in data-intensive research: every research group repeats the same foundational processing steps, fitting continua, measuring indices, calculating local densities. This redundancy wastes collective compute resources and creates barriers for researchers without HPC access.
 
 ARDs extend beyond traditional Value-Added Catalogs (VACs) through three distinguishing characteristics:
 
@@ -80,26 +80,29 @@ ARDs are built in progressive layers, each enabling query patterns impossible at
 | 2: Vectors | Embedding representations | Similarity search, anomaly detection |
 | 3: Graphs | Relationship structures | Topological queries, network analysis |
 
-Each layer builds on the one below—embeddings over enriched feature spaces capture more meaning than embeddings over raw measurements alone.
+Each layer builds on the one below. Embeddings over enriched feature spaces capture more meaning than embeddings over raw measurements alone.
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-analysis-ready-datasets/
+analysis-ready-dataset/
+├── 📂 assets/                      # Figures, diagrams, banners
 ├── 📂 docs/
-│   ├── 📂 framework/           # ARD concept, layer model, methodology
-│   ├── 📂 case-studies/        # Domain-specific implementations
-│   │   ├── 📂 desi/            # DESI spectroscopic survey ARD
-│   │   └── 📂 steam/           # Steam Dataset 2025 (proto-ARD)
-│   └── 📂 documentation-standards/
-├── 📂 research/                # GDR outputs, discovery artifacts
-├── 📂 assets/                  # Figures, diagrams
-├── 📂 work-logs/               # Development history
+│   ├── 📂 case-studies/
+│   │   ├── 📂 desi/                # DESI spectroscopic survey ARD
+│   │   └── 📂 steam/               # Steam Dataset 2025 (proto-ARD)
+│   ├── 📂 documentation-standards/ # Templates, tagging strategy
+│   └── 📂 framework/               # ARD concept, layer model, methodology
+├── 📂 internal-files/              # Research PDFs, working documents
+├── 📂 research/                    # GDR outputs, discovery artifacts
+├── 📂 shared/                      # Shared resources
+├── 📂 spec/                        # Specifications
+├── 📂 work-logs/                   # Development history
 ├── 📄 LICENSE
 ├── 📄 LICENSE-DATA
-└── 📄 README.md                # This file
+└── 📄 README.md                    # This file
 ```
 
 ---
@@ -127,7 +130,7 @@ Implementation: [steam-dataset-2025](https://github.com/radioastronomyio/steam-d
 
 ## 🌟 Open Science Philosophy
 
-We practice open science and open methodology—our version of "showing your work":
+We practice open science and open methodology, our version of "showing your work":
 
 - Research methodologies are fully documented and repeatable
 - Discovery processes (GDR sessions, literature reviews) are preserved as artifacts
@@ -154,16 +157,16 @@ We practice open science and open methodology—our version of "showing your wor
 
 ## 📄 License
 
-Documentation: MIT License — see [LICENSE](LICENSE) for details.  
+Documentation: MIT License, see [LICENSE](LICENSE) for details.
 Data products: See [LICENSE-DATA](LICENSE-DATA) for dataset-specific terms.
 
 ---
 
 ## 🙏 Acknowledgments
 
-- DESI Collaboration — Source data for primary case study
-- Open source ML community — Foundation models enabling the vector layer
+- DESI Collaboration, source data for primary case study
+- Open source ML community, foundation models enabling the vector layer
 
 ---
 
-Last Updated: 2025-01-06 | Active Development
+Last Updated: 2026-03-29 | Active Development
